@@ -36,7 +36,7 @@ public class Main {
                 Server s = new Server(5555);
                 s.start();
             } else {
-                HOST = args[1];
+                HOST = args[0];
                 try {
                     for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
                         if ("Nimbus".equals(info.getName())) {
