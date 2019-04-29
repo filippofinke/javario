@@ -26,16 +26,17 @@ public class Config {
     /**
      * Field
      */
-    public static int FIELD_WIDTH = 2000;
+    public static int MINIMAP_ZOOM = 4;
+    public static int FIELD_WIDTH = 1000;
     public static int FIELD_HEIGHT = 1000;
 
     /**
      * Food
      */
-    public static int MAX_FOOD = 500;
+    public static int MAX_FOOD = 2000;
     public static int FOOD_TO_RADIUS = 3;
     public static int FOOD_RADIUS = 5;
-    public static int FOOD_DELAY = 100;
+    public static int FOOD_DELAY = 1;
 
     /**
      * Players
@@ -43,7 +44,7 @@ public class Config {
     public static int MAX_PLAYERS = 10;
     public static int PLAYER_RADIUS = 15;
     public static double PLAYER_SPEED = 2;
-    public static int PLAYER_MAX_RADIUS = 100;
+    public static int PLAYER_MAX_RADIUS = 200;
 
     /**
      * Bullets
@@ -53,7 +54,7 @@ public class Config {
     public static int BULLET_DELAY = 100;
     public static int BULLET_COST = 5;
     public static int BULLET_TIMEOUT = 2500;
-    public static double BULLET_SPEED = 2.5;
+    public static double BULLET_SPEED = 5f;
     public static int BULLET_UPDATE_DELAY = 10;
 
 }

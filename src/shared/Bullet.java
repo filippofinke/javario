@@ -82,7 +82,7 @@ public class Bullet {
     }
 
     public void paint(int rx, int ry, Point p, Graphics g) {
-        g.setColor(Color.BLUE);
+        g.setColor(Color.BLACK);
         int x = rx - (p.x - point.x);
         int y = ry - (p.y - point.y);
         g.fillOval(x - Config.BULLET_RADIUS, y - Config.BULLET_RADIUS, Config.BULLET_RADIUS * 2, Config.BULLET_RADIUS * 2);
