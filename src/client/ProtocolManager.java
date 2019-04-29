@@ -73,6 +73,7 @@ public class ProtocolManager extends Thread {
                     ClientPlayer n = new ClientPlayer(id, p);
                     if (GamePanel.player == null) {
                         GamePanel.player = n;
+                        GamePanel.mm.setPlayer(n);
                     }
                     PlayersList.add(n);
                 } else if (read == Protocol.PLAYER_LEFT) {

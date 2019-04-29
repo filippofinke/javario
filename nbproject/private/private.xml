@@ -12,26 +12,16 @@
     </editor-bookmarks>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/Users/filippofinke/Documents/Progetti/javario2/src/main/Main.java</file>
-            <file>file:/Users/filippofinke/Documents/Progetti/javario2/src/client/PlayersList.java</file>
-            <file>file:/Users/filippofinke/Documents/Progetti/javario2/src/shared/Config.java</file>
-            <file>file:/Users/filippofinke/Documents/Progetti/javario2/src/server/FoodManager.java</file>
-            <file>file:/Users/filippofinke/Documents/Progetti/javario2/src/server/ThreadsList.java</file>
-            <file>file:/Users/filippofinke/Documents/Progetti/javario2/src/client/GamePanel.java</file>
-            <file>file:/Users/filippofinke/Documents/Progetti/javario2/src/shared/Protocol.java</file>
-            <file>file:/Users/filippofinke/Documents/Progetti/javario2/src/server/BulletsManager.java</file>
-            <file>file:/Users/filippofinke/Documents/Progetti/javario2/src/client/ClientPlayer.java</file>
-            <file>file:/Users/filippofinke/Documents/Progetti/javario2/src/shared/FoodList.java</file>
-            <file>file:/Users/filippofinke/Documents/Progetti/javario2/src/server/Server.java</file>
-            <file>file:/Users/filippofinke/Documents/Progetti/javario2/src/shared/Food.java</file>
-            <file>file:/Users/filippofinke/Documents/Progetti/javario2/src/client/MovementThread.java</file>
-            <file>file:/Users/filippofinke/Documents/Progetti/javario2/src/server/ServerPlayer.java</file>
-            <file>file:/Users/filippofinke/Documents/Progetti/javario2/src/client/ProtocolManager.java</file>
-            <file>file:/Users/filippofinke/Documents/Progetti/javario2/src/shared/Player.java</file>
-            <file>file:/Users/filippofinke/Documents/Progetti/javario2/src/shared/BulletsList.java</file>
-            <file>file:/Users/filippofinke/Documents/Progetti/javario2/src/shared/Bullet.java</file>
-            <file>file:/Users/filippofinke/Documents/Progetti/javario2/src/server/ServerThread.java</file>
-            <file>file:/Users/filippofinke/Documents/Progetti/javario2/src/client/MainFrame.java</file>
+            <file>file:/home/carlo/Documents/javario/src/client/PlayersList.java</file>
+            <file>file:/home/carlo/Documents/javario/src/client/MiniMap.java</file>
+            <file>file:/home/carlo/Documents/javario/src/server/FoodManager.java</file>
+            <file>file:/home/carlo/Documents/javario/src/client/GamePanel.java</file>
+            <file>file:/home/carlo/Documents/javario/src/main/Main.java</file>
+            <file>file:/home/carlo/Documents/javario/src/client/MainFrame.java</file>
+            <file>file:/home/carlo/Documents/javario/src/shared/Config.java</file>
+            <file>file:/home/carlo/Documents/javario/src/shared/Protocol.java</file>
+            <file>file:/home/carlo/Documents/javario/src/client/ProtocolManager.java</file>
+            <file>file:/home/carlo/Documents/javario/src/server/Server.java</file>
         </group>
     </open-files>
 </project-private>

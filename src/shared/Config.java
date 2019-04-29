@@ -26,7 +26,7 @@ public class Config {
     /**
      * Field
      */
-    public static int FIELD_WIDTH = 1000;
+    public static int FIELD_WIDTH = 2000;
     public static int FIELD_HEIGHT = 1000;
 
     /**
@@ -40,7 +40,7 @@ public class Config {
     /**
      * Players
      */
-    public static int MAX_PLAYERS = 2;
+    public static int MAX_PLAYERS = 10;
     public static int PLAYER_RADIUS = 15;
     public static double PLAYER_SPEED = 2;
     public static int PLAYER_MAX_RADIUS = 100;
