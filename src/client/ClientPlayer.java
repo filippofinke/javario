@@ -32,7 +32,7 @@ public class ClientPlayer extends Player {
         int radius = this.getRadius();
         int x = rx;
         int y = ry;
-        g.setColor(Color.YELLOW);
+        g.setColor(Color.BLUE);
         if (this.getId() != GamePanel.player.getId()) {
             g.setColor(Color.RED);
             x = rx - (p.x - point.x);

@@ -20,6 +20,8 @@ package client;
 import java.awt.Color;
 import java.awt.Graphics;
 import javax.swing.JPanel;
+import shared.Bullet;
+import shared.BulletsList;
 import shared.Config;
 import shared.Player;
 
@@ -27,34 +29,42 @@ import shared.Player;
  *
  * @author Carlo Pezzotti
  */
-public class MiniMap extends JPanel{
-    
+public class MiniMap extends JPanel {
+
     private Player player;
-    
-    public MiniMap(){
+
+    public MiniMap() {
     }
 
     public void setPlayer(Player player) {
         this.player = player;
     }
-    
-    
 
     @Override
     public void paint(Graphics g) {
-        this.setSize(Config.FIELD_WIDTH/8, Config.FIELD_HEIGHT/8);
+        this.setSize(Config.FIELD_WIDTH / Config.MINIMAP_ZOOM, Config.FIELD_HEIGHT / Config.MINIMAP_ZOOM);
         g.setColor(Color.white);
         g.fillRect(0, 0, this.getWidth(), this.getHeight());
         g.setColor(Color.black);
         g.drawRect(0, 0, this.getWidth(), this.getHeight());
         g.setColor(Color.red);
         for (Player p : PlayersList.getPlayers()) {
-            if(p != null){
-                if(p != player)
-                    g.fillOval((int)p.getX()/8-5, (int)p.getY()/8-5, 10 , 10);
+            if (p != null) {
+                if (p != player) {
+                    int r = p.getRadius() / Config.MINIMAP_ZOOM;
+                    g.fillOval((int) p.getX() / Config.MINIMAP_ZOOM - r, (int) p.getY() / Config.MINIMAP_ZOOM - r, r * 2, r * 2);
+                }
             }
         }
-        g.setColor(Color.blue);
-        g.fillOval((int)player.getX()/8 -5, (int)player.getY()/8 -5, 10 , 10);
-    }   
+        g.setColor(Color.BLACK);
+        for (Bullet b : BulletsList.getBullets()) {
+            if (b != null) {
+                int r = Config.BULLET_RADIUS / Config.MINIMAP_ZOOM;
+                g.fillOval((int) b.getX() / Config.MINIMAP_ZOOM - r, (int) b.getY() / Config.MINIMAP_ZOOM - r, r * 2, r * 2);
+            }
+        }
+        g.setColor(Color.BLUE);
+        int r = player.getRadius() / Config.MINIMAP_ZOOM;
+        g.fillOval((int) player.getX() / Config.MINIMAP_ZOOM - r, (int) player.getY() / Config.MINIMAP_ZOOM - r, r * 2, r * 2);
+    }
 }

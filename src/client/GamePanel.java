@@ -87,7 +87,7 @@ public class GamePanel extends JPanel implements ProtocolManagerListener {
         
         
         
-        /*if(mouse != null)
+        if(mouse != null)
         {
             g.setColor(Color.BLACK);
             g.drawLine(getWidth() / 2, getHeight() / 2, mouse.x, getHeight() / 2);
@@ -106,7 +106,7 @@ public class GamePanel extends JPanel implements ProtocolManagerListener {
             int ch = getHeight() / 2;
             g.setColor(Color.RED);
             g.drawLine(cw, ch, cw + nextX, ch + nextY);
-        }*/
+        }
         mm.setLocation(20,20);
     }
 
