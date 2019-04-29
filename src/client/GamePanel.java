@@ -40,6 +40,8 @@ public class GamePanel extends JPanel implements ProtocolManagerListener {
     private String status = "";
     
     public static Point mouse = null;
+    
+    public static MiniMap mm;
 
     @Override
     public void paint(Graphics g) {
@@ -48,6 +50,7 @@ public class GamePanel extends JPanel implements ProtocolManagerListener {
         g.setColor(Color.BLACK);
         g.drawString("@ Filippo Finke", 3, getHeight() - 5);
         if (player != null) {
+            
             Point mainPlayer = player.getPoint();
 
             int centerX = getWidth() / 2;
@@ -70,11 +73,14 @@ public class GamePanel extends JPanel implements ProtocolManagerListener {
                     b.paint(centerX, centerY, mainPlayer, g);
                 }
             }
+            mm.paint(g);
         } else {
             g.setColor(Color.BLACK);
             int sWidth = g.getFontMetrics().stringWidth(status);
             g.drawString(status, (getWidth() - sWidth) / 2, getHeight() / 2);
         }
+        
+        
         
         
         /*if(mouse != null)
@@ -97,10 +103,13 @@ public class GamePanel extends JPanel implements ProtocolManagerListener {
             g.setColor(Color.RED);
             g.drawLine(cw, ch, cw + nextX, ch + nextY);
         }*/
+        mm.setLocation(20,20);
     }
 
     public GamePanel() {
         try {
+            mm = new MiniMap();
+            
             status = "Connecting to the server..";
             ProtocolManager pm = new ProtocolManager(this);
             pm.start();
@@ -108,6 +117,7 @@ public class GamePanel extends JPanel implements ProtocolManagerListener {
             mt = new MovementThread(this, pm);
             this.addMouseMotionListener(mt);
             this.addMouseListener(mt);
+            
             mt.start();
         } catch (IOException ex) {
             System.out.println("Error can't connect to the server");
