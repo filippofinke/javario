@@ -19,7 +19,6 @@ package client;
 
 import java.awt.Color;
 import java.awt.Graphics;
-import java.awt.Point;
 import javax.swing.JPanel;
 import shared.Config;
 import shared.Player;

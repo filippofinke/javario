@@ -42,6 +42,8 @@ public class GamePanel extends JPanel implements ProtocolManagerListener {
     public static Point mouse = null;
     
     public static MiniMap mm;
+    
+    public static Leaderboard leaderboard;
 
     @Override
     public void paint(Graphics g) {
@@ -74,6 +76,8 @@ public class GamePanel extends JPanel implements ProtocolManagerListener {
                 }
             }
             mm.paint(g);
+            leaderboard.setLocation(this.getWidth()-leaderboard.getWidth(), 0);      
+            leaderboard.paint(g);
         } else {
             g.setColor(Color.BLACK);
             int sWidth = g.getFontMetrics().stringWidth(status);
@@ -109,6 +113,7 @@ public class GamePanel extends JPanel implements ProtocolManagerListener {
     public GamePanel() {
         try {
             mm = new MiniMap();
+            leaderboard = new Leaderboard();
             
             status = "Connecting to the server..";
             ProtocolManager pm = new ProtocolManager(this);
