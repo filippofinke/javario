@@ -4,3 +4,6 @@ javario
 
 
 ![Demo](demo.gif)
+
+## Requirements:
+- Netbeans
