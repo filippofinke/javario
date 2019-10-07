@@ -6,4 +6,5 @@ javario
 ![Demo](demo.gif)
 
 ## Requirements:
+- Java
 - Netbeans
